@@ -178,6 +178,9 @@
     display:flex; flex-direction:column; transition:transform .18s ease, box-shadow .18s ease;
   }
   .pcard:hover{ transform:translateY(-3px); box-shadow:var(--shadow); }
+  .pcard:active{ transform:translateY(-1px) scale(.99); }
+  @media (prefers-reduced-motion: reduce){ .pcard{ transition:none; } }
+  .pcard .buy:active{ color:var(--teal); }
   .pcard .card-backdrop{ position:absolute; inset:0; z-index:1; }
   .pcard .buy{ position:relative; z-index:2; }
 
